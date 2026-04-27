@@ -10,8 +10,8 @@ def setup_drawing():
     screen.bgcolor("white")
     screen.setup(700, 600)
 
-    root = screen._root  # получаем доступ к корневому окну tkinter
-    root.iconbitmap("2048/rabbit.ico")  # устанавливаем иконку
+    root = screen._root
+    root.iconbitmap("2048/rabbit.ico")
 
     t.shape("turtle")
     t.pensize(3)
