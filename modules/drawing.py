@@ -10,6 +10,9 @@ def setup_drawing():
     screen.bgcolor("white")
     screen.setup(700, 600)
 
+    root = screen._root  # получаем доступ к корневому окну tkinter
+    root.iconbitmap("2048/rabbit.ico")  # устанавливаем иконку
+
     t.shape("turtle")
     t.pensize(3)
     t.speed(0)
@@ -21,7 +24,7 @@ def setup_drawing():
     text_turtle.color("black")
     text_turtle.goto(-340, 270)
     text_turtle.write("Управление: C - очистить | R - красный | G - зелёный | B - синий | P - розовый | ↑/↓ - толщина",
-                      font=("Arial", 10, "normal"))
+                      font=("Georgia", 10, "normal"))
 
     def draw(x, y):
         t.pendown()
